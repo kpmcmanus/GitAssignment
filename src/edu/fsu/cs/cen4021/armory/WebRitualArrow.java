@@ -5,9 +5,10 @@ import java.net.*;
 /**
  * @author kpmcmanus
  */
-class WebRitualArrow implements Weapon {
+class WebRitualArrow extends BasicWeapon implements Weapon {
 
     WebRitualArrow() {
+        super(50);
         String numberLine = "";
 
         // Used some code from http://stackoverflow.com/questions/9825798/how-to-read-a-text-from-a-web-page-with-java
@@ -18,11 +19,8 @@ class WebRitualArrow implements Weapon {
 
             // Read all the text returned by the server
             BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
-            String str = "";
+            String str;
             while ((str = in.readLine()) != null) {
-                str = in.readLine();
-                if(str == null)
-                    str = "";
                 if(str.length() > 4)
                     if(str.charAt(0) == '<' && str.charAt(1) == 'h' && str.charAt(2) == '1' && str.charAt(3) == '>')
                          numberLine = str; // numberLine will be <h1>number</h1>
@@ -53,6 +51,5 @@ class WebRitualArrow implements Weapon {
         return damage;
     }
 
-    private int DAMAGE;
 
 }

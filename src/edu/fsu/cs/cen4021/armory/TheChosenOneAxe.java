@@ -5,9 +5,10 @@ import java.util.*;
 /**
  * @author kpmcmanus
  */
-class TheChosenOneAxe implements Weapon {
+class TheChosenOneAxe extends BasicWeapon implements Weapon {
 
     TheChosenOneAxe() {
+        super(50);
         // The code to read a text file line by line was adopted from
         // http://www.avajava.com/tutorials/lessons/how-do-i-read-a-string-from-a-file-line-by-line.html
         int count = 1;
@@ -56,6 +57,4 @@ class TheChosenOneAxe implements Weapon {
         }
         return damage;
     }
-
-    private int DAMAGE;
 }

@@ -5,9 +5,10 @@ import java.util.*;
 /**
  * @author kpmcmanus
  */
-class AncientMagicStaff implements Weapon {
+class AncientMagicStaff extends BasicWeapon implements Weapon {
 
     AncientMagicStaff() {
+        super(50);
         List<Integer> numberList = new ArrayList<>();
 
         // The code to deserialize a java .obj file was adopted from
@@ -59,6 +60,4 @@ class AncientMagicStaff implements Weapon {
         }
         return damage;
     }
-
-    private int DAMAGE;
 }
