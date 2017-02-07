@@ -1,0 +1,28 @@
+(a) Counting objects: 3, done.
+   Delta compression using up to 4 threads.
+   Compressing objects: 100% (3/3), done.
+   Writing objects: 100% (3/3), 395 bytes | 0 bytes/s,
+   done.
+   Total 3 (delta 1), reused 0 (delta 0)
+   remote: Resolving deltas: 100% (1/1), completed with 1
+   local objects.
+   To https://github.com/kpmcmanus/GitAssignment.git
+      cfb3b84..da66fe2  master -> master
+
+(b) 11. I used the command " git rev-list --all --count ".
+
+(c) .gitignore was last modified on Thu Sep 15 10:29:34 2016 -0400. I used the command "git log .gitignore" to see this
+    information.
+
+(d) " git log --name-only --relative=src --pretty=format: | sort | uniq -c | sort -nr " shows the amount of commits per
+    file in the src folder.
+
+(e) " git log " shows the list of commits to to repository, including the author, commit number, date, and description.
+    " git status " shows the working tree status. It tells you if your branch is up to date as well as list changes
+    not staged for commit and untracked files.
+
+(f) " git log ./src/edu/fsu/cs/cen4021/RoleGame.java " lets you see the commit history for that specific file.
+
+(g) Use the command " git log --grep="file" " to see the list of commits with "file" in the commit message.
+
+(h) The command " git log --author=Alice -p "master@{2016-09-01}..master@{2016.09.16}" " will work.
