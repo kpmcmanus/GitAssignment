@@ -14,18 +14,21 @@ public class RoleGame {
         int armor = 20, armor2 = 19;
         System.out.println("Sword was able to do " + sword.hit(armor) + " damage due to an armor with " + armor + " points.");
 
-        Weapon simplearrow = WeaponFactory.getWeapon("simplearrow");
-        System.out.println("SimpleArrow does " + simplearrow.hit() + " damage.");
-        System.out.println("SimpleArrow was able to do " + simplearrow.hit(armor) + " damage due to an armor with " + armor + " points.");
+        Weapon simpleArrow = WeaponFactory.getWeapon("simpleArrow");
+        System.out.println("SimpleArrow does " + simpleArrow.hit() + " damage.");
+        System.out.println("SimpleArrow was able to do " + simpleArrow.hit(armor) + " damage due to an armor with " + armor + " points.");
 
-        Weapon simpleaxe = WeaponFactory.getWeapon("simpleaxe");
-        System.out.println("SimpleAxe does " + simpleaxe.hit() + " damage.");
-        System.out.println("SimpleAxe was able to do " + simpleaxe.hit(armor) + " damage due to an armor with " + armor + " points.");
+        Weapon simpleAxe = WeaponFactory.getWeapon("simpleAxe");
+        System.out.println("SimpleAxe does " + simpleAxe.hit() + " damage.");
+        System.out.println("SimpleAxe was able to do " + simpleAxe.hit(armor) + " damage due to an armor with " + armor + " points.");
 
-        Weapon simplemagicstaff = WeaponFactory.getWeapon("simplemagicstaff");
-        System.out.println("SimpleMagicStaff does " + simplemagicstaff.hit() + " damage.");
-        System.out.println("SimpleMagicStaff was able to do " + simplemagicstaff.hit(armor) + " damage due to an armor with " + armor + " points.");
+        Weapon simpleMagicStaff = WeaponFactory.getWeapon("simpleMagicStaff");
+        System.out.println("SimpleMagicStaff does " + simpleMagicStaff.hit() + " damage.");
+        System.out.println("SimpleMagicStaff was able to do " + simpleMagicStaff.hit(armor) + " damage due to an armor with " + armor + " points.");
 
+        Weapon theChosenOneAxe = WeaponFactory.getWeapon("theChosenOneAxe");
+        System.out.println("TheChosenOneAxe does " + theChosenOneAxe.hit() + " damage.");
+        System.out.println("TheChosenOneAxe was able to do " + theChosenOneAxe.hit(armor) + " damage due to an armor with " + armor + " points.");
 
         //TODO: Add the remaining weapons here
 
