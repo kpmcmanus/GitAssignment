@@ -10,9 +10,13 @@ public class RoleGame {
 
     public static void main(String[] args) {
         Weapon sword = WeaponFactory.getWeapon("sword");
-        System.out.println("Sword has " + sword.hit() + " of damage.");
+        System.out.println("Sword does " + sword.hit() + " damage.");
         int armor = 20;
-        System.out.println("Swords was able to do " + sword.hit(armor) + " of damage due to an armor with " + armor + " points.");
+        System.out.println("Sword was able to do " + sword.hit(armor) + " damage due to an armor with " + armor + " points.");
+
+        Weapon simplearrow = WeaponFactory.getWeapon("simplearrow");
+        System.out.println("SimpleArrow does " + simplearrow.hit() + " damage.");
+        System.out.println("SimpleArrow was able to do " + simplearrow.hit(armor) + " damage due to an armor with " + armor + " points.");
 
         //TODO: Add the remaining weapons here
 
